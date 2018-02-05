@@ -1,0 +1,17 @@
+{
+  "name": "style-guide-md",
+  "version": "1.0.0",
+  "description": "A JS -> MD transpiler for creating Style Guide markdown",
+  "main": "index.js",
+  "bin": {
+    "jstomd": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bill Bailey",
+  "license": "Private",
+  "dependencies": {
+    "file": "^0.2.2"
+  }
+}
