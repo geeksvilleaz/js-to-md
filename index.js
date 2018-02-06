@@ -24,15 +24,17 @@ const config = {
   ignore: ['node_modules'],
 };
 
-go();
+goForAWalk();
 
-function go() {
+/**
+ * Grabs the js files in the ./src folder and "walks" through each one.
+ */
+function goForAWalk() {
   file.walk('./src', (isNull, dirPath, dirs, localFiles) => {
-    // need to reset when working with multiple files
+    // we need to reset when working with multiple files
     sectionNum = 0;
     ruleNum = 0;
     toc.length = 0;
-
 
     if (/node_modules/.test(dirPath)) {
       return;
@@ -58,7 +60,7 @@ function go() {
 }
 
 /**
- *
+ * Transpiles to markdown
  * @param {Array} data
  * @param {string} localPath
  */
@@ -82,7 +84,12 @@ function toMD(data, localPath) {
   return buffer.join('\n\n');
 };
 
-
+/**
+ * Determines how to transpile each part of the file.
+ *
+ * @param {*} key
+ * @param {*} data
+ */
 function transpile(key, data) {
   switch (key) {
     case 'title':
@@ -167,6 +174,10 @@ function transpile(key, data) {
   }
 }
 
+/**
+ * Creates a title
+ * @param {string} str
+ */
 function toLink(str) {
   return str.toLowerCase().replace(/ /g, '-');
 }
