@@ -4,14 +4,14 @@
   "description": "A JS -> MD transpiler for creating Style Guide markdown",
   "main": "index.js",
   "bin": {
-    "jstomd": "index.js"
+    "style-guide-md": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Bill Bailey",
-  "license": "Private",
+  "license": "UNLICENSED",
   "dependencies": {
-    "file": "^0.2.2"
+    "file": "0.2.2"
   }
 }
