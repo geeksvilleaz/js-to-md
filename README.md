@@ -12,18 +12,18 @@ You can install this one of two ways:
 1. Clone and link
 
     ```shell
-    git clone http://stash.chotel.com/scm/chcom/style-guide-md
-    cd style-guide-markdown
+    git clone http://stash.chotel.com/scm/~bill_bailey/style-guide-md.git
+    cd style-guide-md
     npm i
     npm link
     cd ../../your-project
-    npm link style-guide-markdown
+    npm link style-guide-md
     ```
 
 1. Manually install from repo. You will need to note the correct version number.
 
     ```shell
-    npm i git+http://stash.chotel.com/scm/chcom/style-guide-md#v1.0.0
+    npm i git+http://stash.chotel.com/scm/~bill_bailey/style-guide-md.git#v1.0.0
     ```
 
 ## Overview
