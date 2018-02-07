@@ -60,7 +60,8 @@ function goForAWalk() {
 }
 
 /**
- * Transpiles to markdown
+ * Transpiles to markdown.
+ *
  * @param {Array} data
  * @param {string} localPath
  */
@@ -87,8 +88,8 @@ function toMD(data, localPath) {
 /**
  * Determines how to transpile each part of the file.
  *
- * @param {*} key
- * @param {*} data
+ * @param {string} key
+ * @param {Object} data
  */
 function transpile(key, data) {
   switch (key) {
@@ -148,6 +149,7 @@ function transpile(key, data) {
 
     case 'sections':
       let buffer = [];
+      toc.length = 0;
 
       Object.keys(data).forEach((section) => {
         sectionNum += 1;
@@ -175,7 +177,8 @@ function transpile(key, data) {
 }
 
 /**
- * Creates a title
+ * Removes spaces and capitol letters from a string to make it a link.
+ *
  * @param {string} str
  */
 function toLink(str) {
