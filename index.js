@@ -78,7 +78,7 @@ function toMD(data, localPath) {
   const renderedTOC = toc.join('\n');
   buffer.forEach((item, index) => {
     if (item === TOC_PLACEHOLDER) {
-      buffer[index] = `## Table of Contents\n\n${renderedTOC}`;
+      buffer[index] = `<a name="table-of-contents"></a>\n## Table of Contents\n\n${renderedTOC}`;
     }
   });
 
@@ -155,6 +155,7 @@ function transpile(key, data) {
         sectionNum += 1;
         ruleNum = 0;
 
+        buffer.push(`<a name="${toLink(section)}"></a>\n`);
         buffer.push(`## ${section}\n\n`);
         toc.push(`1. [${section}](#${toLink(section)})`);
 
