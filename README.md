@@ -1,18 +1,17 @@
-# Style Guide Markdown
+# JS-TO-MD
 
-> A Node.js transpiler to convert a JavaScript object to Markdown to create Style Guides.
+> A Node.js transpiler to convert a JavaScript object to Markdown to create dynamic Style Guides.
 
 ## Install
 
 > TODO: Add to NPM.
-> TODO: Add repo URL
 
 You can install this one of two ways:
 
 1. Clone and link
 
     ```shell
-    git clone http://stash.chotel.com/scm/~bill_bailey/style-guide-md.git
+    git clone https://github.com/geeksvilleaz/js-to-md.git
     cd style-guide-md
     npm i
     npm link
@@ -23,7 +22,7 @@ You can install this one of two ways:
 1. Manually install from repo. You will need to note the correct version number.
 
     ```shell
-    npm i git+http://stash.chotel.com/scm/~bill_bailey/style-guide-md.git#v1.0.0
+    npm i git+https://github.com/geeksvilleaz/js-to-md.git#v1.0.0
     ```
 
 ## Overview
