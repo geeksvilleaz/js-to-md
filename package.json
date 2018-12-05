@@ -1,6 +1,6 @@
 {
   "name": "js-to-md",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JS -> MD transpiler for creating Style Guide markdown",
   "main": "index.js",
   "bin": {

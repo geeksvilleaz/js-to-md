@@ -4,25 +4,10 @@
 
 ## Install
 
-> TODO: Add to NPM.
-
-You can install this one of two ways:
-
-1. Clone and link
+* NPM
 
     ```shell
-    git clone https://github.com/geeksvilleaz/js-to-md.git
-    cd style-guide-md
-    npm i
-    npm link
-    cd ../../your-project
-    npm link style-guide-md
-    ```
-
-1. Manually install from repo. You will need to note the correct version number.
-
-    ```shell
-    npm i git+https://github.com/geeksvilleaz/js-to-md.git#v1.0.0
+    npm install --save js-to-md
     ```
 
 ## Overview
@@ -32,7 +17,7 @@ Add the following entry to your `package.json` scripts object:
 ```javascript
 "scripts": {
   // ...
-  "jstomd": "jsToMD"
+  "jstomd": "js-to-md"
   // ...
 }
 ```
@@ -83,3 +68,5 @@ examples: {
   ]
 }
 ```
+
+> **NOTE:** Please see the `src` folder for a working example, and its output file in the `example` folder.
